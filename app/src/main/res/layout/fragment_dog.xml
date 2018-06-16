@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    tools:context="com.example.dedeathshadow.home.CatFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/dog"
+                />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Items"
+                android:textSize="18dp"
+                android:textColor="@color/sky_blue"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"/>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickDialer">
+
+                    <LinearLayout
+                        android:id="@+id/ll_food"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#607D8B">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dogbigboss"
+                            android:scaleType="fitXY"
+                            android:id="@+id/imgfood"/>
+                        <View
+                            android:id="@+id/view_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#c0392b"
+                            android:layout_below="@+id/tv_icon_dialer"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Food"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textColor="#ecf0f1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/view_line"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickSms">
+
+                    <LinearLayout
+                        android:id="@+id/ll_acces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#607D8B">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dogbigbossblack"
+                            android:scaleType="fitXY"
+                            android:id="@+id/imgaccess"/>
+
+                        <View
+                            android:id="@+id/view_line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#c0392b"
+                            android:layout_below="@+id/tv_icon_sms"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Accessories"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textColor="#ecf0f1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/view_line"
+                            />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickCamera">
+
+                    <LinearLayout
+                        android:id="@+id/ll_toys"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#607D8B">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dogtoyeight"
+                            android:scaleType="fitXY"
+                            android:id="@+id/imgtoys"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#c0392b"
+                            android:layout_below="@+id/tv_icon_dialer"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Toys"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textColor="#ecf0f1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/view_line"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickEmail">
+
+                    <LinearLayout
+                        android:id="@+id/ll_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#607D8B">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dogpetkineyewipe"
+                            android:scaleType="fitXY"
+                            android:id="@+id/imghealth"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#c0392b"
+                            android:layout_below="@+id/tv_icon_dialer"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="HealthCare"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textColor="#ecf0f1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/view_line"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickSearch">
+
+                    <LinearLayout
+                        android:id="@+id/ll_suppl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#607D8B">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/dogpetkinwipes"
+                            android:scaleType="fitXY"
+                            android:id="@+id/imgsuppl"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#c0392b"
+                            android:layout_below="@+id/tv_icon_dialer"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Supplements"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textColor="#ecf0f1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/view_line"
+                            />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:onClick="onClickApps">
+
+                    <LinearLayout
+                        android:id="@+id/ll_fashion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="#607D8B">
+
+                        <ImageView
+                            android:layout_width="145dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/catcaps"
+                            android:scaleType="fitXY"
+                            android:id="@+id/imgfashion"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#c0392b"
+                            android:layout_below="@+id/tv_icon_dialer"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="Fashion"
+                            android:textAlignment="center"
+                            android:textSize="15sp"
+                            android:textColor="#ecf0f1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/view_line"
+                            />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

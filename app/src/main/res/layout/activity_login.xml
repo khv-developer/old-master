@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lledit"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="italic|bold"
+
+            android:text="PetCart"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_pets_black_24dp"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ema"
+
+                android:backgroundTint="@color/dark"
+                android:textColorHint="@color/dark"
+                android:hint="Enter Your Email Address"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:inputType="textWebEmailAddress"
+                android:textSize="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:ems="10"
+                android:layout_weight="0"
+
+                android:backgroundTint="@color/dark"
+                android:textColorHint="@color/dark"
+                android:hint="Enter Your Password"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:textSize="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorTrans"
+
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Login"
+            android:id="@+id/btnlogin" />
+
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="New User? Register First"
+            android:id="@+id/txtsign"
+            android:layout_below="@+id/btnlogin"
+            android:textStyle="bold|italic"
+            android:textSize="20dp"
+            android:textColor="@color/Tomato"/>-->
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTrans">#db000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffb054</color>
+    <color name="green">#29A480</color>
+    <color name="greendark">#27ab4b</color>
+    <color name="remove_btn_bg"> #e36e6d</color>
+    <color name="grey">#c4c1c1</color>
+    <color name="dark">#787373</color>
+    <color name="darker">#3e3b3b</color>
+    <color name="paymentBg">#D6D6D6</color>
+    <!--Home Releted color code-->
+    <color name="drawer_bg">#D8DCE7</color>
+    <color name="sky_blue">#3598DB</color>
+    <color name="bg">#CCCDD2</color>
+    <color name="greenLight">#29AA8C</color>
+    <color name="discountBg">#CECFD1</color>
+    <color name="discountFont">#951A1D</color>
+    <color name="discountTransBg">#A6EFECE7</color>
+    <color name="red">#df4914</color>
+
+</resources>

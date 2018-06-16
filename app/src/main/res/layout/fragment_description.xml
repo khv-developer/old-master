@@ -1,0 +1,53 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background"
+    tools:context="com.example.dedeathshadow.home.DescriptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+            app:cardCornerRadius="5dp"
+            android:layout_margin="5dp"
+            app:cardBackgroundColor="@color/darker">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image_description"/>
+
+        </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtName"
+                android:layout_margin="5dp"
+                android:textSize="15dp"
+                android:text="" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/txtPrice"
+                   android:layout_margin="5dp"
+                   android:textSize="15dp"
+                   android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:id="@+id/txtdesc"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnaddcart"
+            android:layout_marginTop="90dp"
+            android:text="add to cart"/>
+
+</android.support.v7.widget.LinearLayoutCompat>
